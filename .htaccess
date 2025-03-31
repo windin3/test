@@ -1,0 +1,2 @@
+# .htaccess file to handle 404 errors
+#ErrorDocument 404 /404.php

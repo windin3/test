@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="โรงเรียนเทพปัญญา - สร้างความรู้คู่คุณธรรม นำไปสู่การพัฒนาที่ยั่งยืน">
+    <title>โรงเรียนเทพปัญญา - หน้าหลัก</title>
+    <!-- รวมไฟล์ CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/mega-menu.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-blue">
+    <!-- แถบด้านบนของเว็บไซต์ -->
+    <header>
+        <!-- แถบด้านบนสุด -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> 02-XXX-XXXX</span>
+                    <span><i class="fas fa-envelope"></i> info@theppanya.ac.th</span>
+                </div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Line"><i class="fab fa-line"></i></a>
+                </div>
+                <div class="accessibility">
+                    <button class="font-size-btn" id="font-decrease" aria-label="ลดขนาดตัวอักษร">A-</button>
+                    <button class="font-size-btn" id="font-default" aria-label="ขนาดตัวอักษรปกติ">A</button>
+                    <button class="font-size-btn" id="font-increase" aria-label="เพิ่มขนาดตัวอักษร">A+</button>
+                    <button class="color-mode-btn" id="color-normal" aria-label="โหมดสีปกติ"><i class="fas fa-sun"></i></button>
+                    <button class="color-mode-btn" id="color-dark" aria-label="โหมดกลางคืน"><i class="fas fa-moon"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- โลโก้และชื่อโรงเรียน -->
+        <div class="logo-section">
+            <div class="container">
+                <div class="logo-container">
+                    <img src="images/school-logo.png" alt="โลโก้โรงเรียนเทพปัญญา" class="logo">
+                    <div class="site-title">
+                        <h1>โรงเรียนเทพปัญญา</h1>
+                        <h2>THEP PANYA SCHOOL</h2>
+                    </div>
+                </div>
+                <div class="search-container">
+                    <form action="#" method="get" class="search-form">
+                        <input type="text" name="search" placeholder="ค้นหาข้อมูล...">
+                        <button type="submit" aria-label="ค้นหา"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- เมนูหลักแบบ Mega Menu -->
+        <nav class="mega-menu-container">
+            <div class="container">
+                <button class="mobile-menu-toggle" aria-label="เปิด/ปิดเมนู">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="mega-menu">
+                    <li>
+                        <a href="index.html" class="active"><i class="fas fa-home menu-icon"></i> หน้าหลัก</a>
+                    </li>
+                    <li class="has-mega-menu">
+                        <a href="#"><i class="fas fa-school menu-icon"></i> เกี่ยวกับโรงเรียน <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <div class="mega-content">
+                            <div class="mega-col">
+                                <h3><i class="fas fa-info-circle"></i> ข้อมูลทั่วไป</h3>
+
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-history"></i> ประวัติโรงเรียน</a></li>
+                                    <li><a href="#"><i class="fas fa-certificate"></i> ปรัชญา วิสัยทัศน์ พันธกิจ</a></li>
+                                    <li><a href="#"><i class="fas fa-sitemap"></i> โครงสร้างการบริหาร</a></li>
+                                    <li><a href="#"><i class="fas fa-trophy"></i> เกียรติประวัติ</a></li>
+                                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> แผนที่โรงเรียน</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h3><i class="fas fa-user-tie"></i> บุคลากร</h3>
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-user-graduate"></i> ผู้บริหาร</a></li>
+                                    <li><a href="#"><i class="fas fa-chalkboard-teacher"></i> คณะครู</a></li>
+                                    <li><a href="#"><i class="fas fa-users-cog"></i> บุคลากรสนับสนุน</a></li>
+                                    <li><a href="#"><i class="fas fa-hands-helping"></i> สมาคมผู้ปกครอง</a></li>
+                                    <li><a href="#"><i class="fas fa-user-friends"></i> ศิษย์เก่า</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h3><i class="fas fa-laptop"></i> หน่วยงานภายใน</h3>
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-book"></i> กลุ่มสาระการเรียนรู้</a></li>
+                                    <li><a href="#"><i class="fas fa-pencil-alt"></i> งานวิชาการ</a></li>
+                                    <li><a href="#"><i class="fas fa-user-shield"></i> งานปกครอง</a></li>
+                                    <li><a href="#"><i class="fas fa-hands-helping"></i> งานแนะแนว</a></li>
+                                    <li><a href="#"><i class="fas fa-gem"></i> กิจกรรมพัฒนาผู้เรียน</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <div class="mega-featured">
+                                    <div class="mega-featured-image">
+                                        <img src="images/school-featured.jpg" alt="ภาพโรงเรียนเทพปัญญา">
+                                    </div>
+                                    <h4>รู้จักโรงเรียนเทพปัญญา</h4>
+                                    <p>โรงเรียนคุณภาพที่มุ่งเน้นความเป็นเลิศทางวิชาการควบคู่ไปกับการปลูกฝังคุณธรรมและจริยธรรม</p>
+                                    <a href="#" class="mega-featured-link">อ่านเพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has-mega-menu">
+                        <a href="#"><i class="fas fa-graduation-cap menu-icon"></i> หลักสูตรการศึกษา <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <div class="mega-content">
+                            <div class="mega-col">
+                                <h3><i class="fas fa-child"></i> ระดับประถมศึกษา</h3>
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-book-open"></i> หลักสูตรทั่วไป</a></li>
+                                    <li><a href="#"><i class="fas fa-language"></i> หลักสูตรภาษาอังกฤษ (EP)</a></li>
+                                    <li><a href="#"><i class="fas fa-microscope"></i> หลักสูตรวิทยาศาสตร์-คณิตศาสตร์</a></li>
+                                    <li><a href="#"><i class="fas fa-music"></i> หลักสูตรศิลปะดนตรี</a></li>
+                                    <li><a href="#"><i class="fas fa-calendar-alt"></i> ตารางเรียน</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h3><i class="fas fa-user-graduate"></i> ระดับมัธยมศึกษา</h3>
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-book-open"></i> หลักสูตรทั่วไป</a></li>
+                                    <li><a href="#"><i class="fas fa-language"></i> หลักสูตรภาษาอังกฤษ (EP)</a></li>
+                                    <li><a href="#"><i class="fas fa-atom"></i> หลักสูตรวิทยาศาสตร์-คณิตศาสตร์</a></li>
+                                    <li><a href="#"><i class="fas fa-landmark"></i> หลักสูตรศิลป์-ภาษา</a></li>
+                                    <li><a href="#"><i class="fas fa-calendar-alt"></i> ตารางเรียน</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h3><i class="fas fa-award"></i> หลักสูตรพิเศษ</h3>
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-robot"></i> โครงการ STEM Education</a></li>
+                                    <li><a href="#"><i class="fas fa-comments"></i> หลักสูตรภาษาจีน</a></li>
+                                    <li><a href="#"><i class="fas fa-comments"></i> หลักสูตรภาษาญี่ปุ่น</a></li>
+                                    <li><a href="#"><i class="fas fa-chess"></i> พัฒนาทักษะความคิด</a></li>
+                                    <li><a href="#"><i class="fas fa-medal"></i> กิจกรรมเสริมทักษะพิเศษ</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <div class="mega-featured">
+                                    <div class="mega-featured-image">
+                                        <img src="images/curriculum-featured.jpg" alt="หลักสูตรการศึกษา">
+                                    </div>
+                                    <h4>หลักสูตรที่โดดเด่น</h4>
+                                    <p>โรงเรียนเทพปัญญามุ่งพัฒนาหลักสูตรที่ตอบโจทย์การเรียนรู้ในศตวรรษที่ 21 สร้างบัณฑิตที่มีคุณภาพ</p>
+                                    <a href="#" class="mega-featured-link">ดูหลักสูตรทั้งหมด <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#"><i class="fas fa-newspaper menu-icon"></i> ข่าวสาร <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#"><i class="fas fa-bullhorn"></i> ข่าวประชาสัมพันธ์</a></li>
+                            <li><a href="#"><i class="fas fa-calendar-check"></i> ปฏิทินกิจกรรม</a></li>
+                            <li><a href="#"><i class="fas fa-camera"></i> ภาพกิจกรรม</a></li>
+                            <li><a href="#"><i class="fas fa-paper-plane"></i> จดหมายข่าว</a></li>
+                            <li><a href="#"><i class="fas fa-trophy"></i> ผลงานและรางวัล</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#"><i class="fas fa-user-friends menu-icon"></i> นักเรียน <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#"><i class="fas fa-check-circle"></i> ระบบรับสมัครนักเรียน</a></li>
+                            <li><a href="#"><i class="fas fa-file-alt"></i> ตรวจสอบผลการเรียน</a></li>
+                            <li><a href="#"><i class="fas fa-clipboard-list"></i> ตารางสอบ</a></li>
+                            <li><a href="#"><i class="fas fa-download"></i> ดาวน์โหลดเอกสาร</a></li>
+                            <li><a href="#"><i class="fas fa-chalkboard"></i> ห้องเรียนออนไลน์</a></li>
+                            <li><a href="#"><i class="fas fa-book"></i> ห้องสมุดดิจิทัล</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#"><i class="fas fa-hands-helping menu-icon"></i> ผู้ปกครอง <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#"><i class="fas fa-calendar-day"></i> ปฏิทินการศึกษา</a></li>
+                            <li><a href="#"><i class="fas fa-credit-card"></i> ชำระค่าเทอม</a></li>
+                            <li><a href="#"><i class="fas fa-bus"></i> ระบบรถรับส่ง</a></li>
+                            <li><a href="#"><i class="fas fa-utensils"></i> โภชนาการโรงเรียน</a></li>
+                            <li><a href="#"><i class="fas fa-comments"></i> ถาม-ตอบ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-phone-alt menu-icon"></i> ติดต่อเรา</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- แถบแสดงเมนูปัจจุบัน (Breadcrumb) -->
+    <div class="breadcrumb-container">
+        <div class="container">
+            <ul class="breadcrumb-list">
+                <li class="breadcrumb-item active"><a href="index.html"><i class="fas fa-home"></i> หน้าหลัก</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- พื้นที่สำหรับเลือกธีม -->
+    <div class="theme-selector">
+        <div class="container">
+            <div class="theme-options">
+                <button class="theme-btn active" data-theme="blue">
+                    <span class="color-sample" style="background-color: #0066cc;"></span>
+                    <span class="theme-name">น้ำเงิน</span>
+                </button>
+                <button class="theme-btn" data-theme="green">
+                    <span class="color-sample" style="background-color: #2e7d32;"></span>
+                    <span class="theme-name">เขียว</span>
+                </button>
+                <button class="theme-btn" data-theme="orange">
+                    <span class="color-sample" style="background-color: #FF8800;"></span>
+                    <span class="theme-name">ส้ม</span>
+                </button>
+                <button class="theme-btn" data-theme="purple">
+                    <span class="color-sample" style="background-color: #6a1b9a;"></span>
+                    <span class="theme-name">ม่วง</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- เนื้อหาหลัก -->
+    <main>
+        <!-- สไลด์หลักเต็มหน้าจอ -->
+        <section class="hero-slider">
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="images/slider1.jpg" alt="ภาพสไลด์ 1">
+                    <div class="slide-caption">
+                        <div class="thai-frame">
+                            <div class="thai-motif thai-motif-top-left"></div>
+                            <div class="thai-motif thai-motif-top-right"></div>
+                            <div class="thai-motif thai-motif-bottom-left"></div>
+                            <div class="thai-motif thai-motif-bottom-right"></div>
+                            <h2>ยินดีต้อนรับสู่โรงเรียนเทพปัญญา</h2>
+                            <p>สร้างความรู้คู่คุณธรรม นำไปสู่การพัฒนาที่ยั่งยืน</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/slider2.jpg" alt="ภาพสไลด์ 2">
+                    <div class="slide-caption">
+                        <div class="thai-frame">
+                            <div class="thai-motif thai-motif-top-left"></div>
+                            <div class="thai-motif thai-motif-top-right"></div>
+                            <div class="thai-motif thai-motif-bottom-left"></div>
+                            <div class="thai-motif thai-motif-bottom-right"></div>
+                            <h2>หลักสูตรที่หลากหลาย</h2>
+                            <p>ตอบโจทย์การเรียนรู้ในศตวรรษที่ 21 พัฒนาทักษะรอบด้าน</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/slider3.jpg" alt="ภาพสไลด์ 3">
+                    <div class="slide-caption">
+                        <div class="thai-frame">
+                            <div class="thai-motif thai-motif-top-left"></div>
+                            <div class="thai-motif thai-motif-top-right"></div>
+                            <div class="thai-motif thai-motif-bottom-left"></div>
+                            <div class="thai-motif thai-motif-bottom-right"></div>
+                            <h2>สิ่งแวดล้อมแห่งการเรียนรู้</h2>
+                            <p>อาคารเรียนทันสมัย พร้อมสิ่งอำนวยความสะดวกครบครัน</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn prev" aria-label="ก่อนหน้า"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next" aria-label="ถัดไป"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ข่าวด่วน และลิงก์ด่วน -->
+        <section class="announcement-section">
+            <div class="container">
+                <div class="grid-layout">
+                    <!-- ข่าวด่วน / ประกาศสำคัญ -->
+                    <div class="grid-item highlight-news">
+                        <div class="section-header">
+                            <h2><i class="fas fa-bullhorn"></i> ข่าวด่วน / ประกาศสำคัญ</h2>
+                        </div>
+                        <div class="news-marquee">
+                            <div class="marquee-content">
+                                <a href="#" class="marquee-item">
+                                    <span class="date">15 มี.ค. 2568</span>
+                                    <span class="text">เปิดรับสมัครนักเรียนใหม่ ประจำปีการศึกษา 2568 วันที่ 1-30 เมษายน 2568</span>
+                                </a>
+                                <a href="#" class="marquee-item">
+                                    <span class="date">10 มี.ค. 2568</span>
+                                    <span class="text">ประกาศผลสอบโครงการพัฒนาความเป็นเลิศทางวิชาการ ประจำปีการศึกษา 2568</span>
+                                </a>
+                                <a href="#" class="marquee-item">
+                                    <span class="date">5 มี.ค. 2568</span>
+                                    <span class="text">ขอเชิญผู้ปกครองเข้าร่วมประชุมผู้ปกครองนักเรียน ประจำภาคเรียนที่ 2/2567 วันที่ 18 มีนาคม 2568</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ลิงก์ด่วน -->
+                    <div class="grid-item quick-links">
+                        <div class="section-header">
+                            <h2><i class="fas fa-link"></i> ลิงก์ด่วน</h2>
+                        </div>
+                        <div class="quick-link-icons">
+                            <a href="#" class="quick-link-item">
+                                <i class="fas fa-user-plus"></i>
+                                <span>สมัครเรียน</span>
+                            </a>
+                            <a href="#" class="quick-link-item">
+                                <i class="fas fa-credit-card"></i>
+                                <span>ชำระค่าเทอม</span>
+                            </a>
+                            <a href="#" class="quick-link-item">
+                                <i class="fas fa-file-alt"></i>
+                                <span>ผลการเรียน</span>
+                            </a>
+                            <a href="#" class="quick-link-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>ปฏิทิน</span>
+                            </a>
+                            <a href="#" class="quick-link-item">
+                                <i class="fas fa-book"></i>
+                                <span>ห้องสมุด</span>
+                            </a>
+                            <a href="#" class="quick-link-item">
+                                <i class="fas fa-download"></i>
+                                <span>เอกสาร</span>
+                            </a>
+                            <a href="#" class="quick-link-item">
+                                <i class="fas fa-chalkboard"></i>
+                                <span>ห้องเรียนออนไลน์</span>
+                            </a>
+                            <a href="#" class="quick-link-item">
+                                <i class="fas fa-question-circle"></i>
+                                <span>ช่วยเหลือ</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ส่วนวิสัยทัศน์และพันธกิจ -->
+        <section class="vision-section">
+            <div class="container">
+                <div class="section-header-center">
+                    <h2>วิสัยทัศน์และพันธกิจ</h2>
+                    <p>แนวทางการจัดการศึกษาของโรงเรียนเทพปัญญา มุ่งสู่การเป็นสถานศึกษาชั้นนำที่มุ่งพัฒนาผู้เรียนให้มีคุณภาพ</p>
+                </div>
+                
+                <div class="vision-mission-container">
+                    <div class="vision-box scroll-reveal" data-delay="100">
+                        <div class="vision-header">
+                            <i class="fas fa-eye"></i>
+                            <h3>วิสัยทัศน์</h3>
+                        </div>
+                        <div class="vision-content">
+                            <p>"เป็นสถานศึกษาชั้นนำที่มุ่งพัฒนาผู้เรียนให้มีความเป็นเลิศทางวิชาการ มีคุณธรรม จริยธรรม และมีทักษะในศตวรรษที่ 21 สามารถแข่งขันได้ในระดับสากล"</p>
+                            <p>โรงเรียนเทพปัญญามุ่งมั่นในการสร้างบรรยากาศแห่งการเรียนรู้ที่มีคุณภาพ พัฒนาหลักสูตรที่ตอบสนองต่อความต้องการของผู้เรียนและสังคม และสร้างเครือข่ายความร่วมมือทางการศึกษาทั้งในและต่างประเทศ</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mission-box scroll-reveal" data-delay="300">
+                        <div class="mission-header">
+                            <i class="fas fa-tasks"></i>
+                            <h3>พันธกิจ</h3>
+                        </div>
+                        <div class="mission-content">
+                            <ul class="mission-list">
+                                <li>จัดการศึกษาที่มุ่งเน้นความเป็นเลิศทางวิชาการและพัฒนาทักษะในศตวรรษที่ 21</li>
+                                <li>ปลูกฝังคุณธรรม จริยธรรม และค่านิยมที่พึงประสงค์ให้แก่ผู้เรียน</li>
+                                <li>พัฒนาหลักสูตรและกระบวนการเรียนรู้ที่หลากหลายตอบสนองความต้องการของผู้เรียน</li>
+                                <li>จัดสภาพแวดล้อมและบรรยากาศที่เอื้อต่อการเรียนรู้อย่างมีความสุข</li>
+                                <li>ส่งเสริมการใช้เทคโนโลยีและนวัตกรรมในการจัดการเรียนการสอน</li>
+                                <li>สร้างเครือข่ายความร่วมมือกับผู้ปกครอง ชุมชน และองค์กรทั้งในและต่างประเทศ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ส่วนสถิติและตัวเลข -->
+        <section class="stats-section parallax-bg">
+            <div class="container">
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="stat-number" data-target="3500">0</div>
+                        <div class="stat-text">นักเรียน</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="stat-number" data-target="185">0</div>
+                        <div class="stat-text">ครูและบุคลากร</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-number" data-target="150">0</div>
+                        <div class="stat-text">รางวัลความสำเร็จ</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-number" data-target="98">0</div>
+                        <div class="stat-text">เปอร์เซ็นต์สอบเข้ามหาวิทยาลัย</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ส่วนหลักสูตรเด่นของโรงเรียน -->
+        <section class="programs-section">
+            <div class="container">
+                <div class="section-header-center">
+                    <h2>หลักสูตรที่โดดเด่น</h2>
+                    <p>โรงเรียนเทพปัญญามีหลักสูตรที่หลากหลายตอบสนองความต้องการและความสนใจของผู้เรียน</p>
+                </div>
+                
+                <div class="programs-grid">
+                    <div class="program-box scroll-reveal" data-delay="100">
+                        <div class="program-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3 class="program-title">หลักสูตรภาษาอังกฤษ (EP)</h3>
+                        <p class="program-desc">จัดการเรียนการสอนโดยใช้ภาษาอังกฤษเป็นสื่อกลาง สอนโดยครูชาวต่างชาติที่เป็นเจ้าของภาษา</p>
+                        <a href="#" class="program-btn">รายละเอียด <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="program-box scroll-reveal" data-delay="200">
+                        <div class="program-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <h3 class="program-title">หลักสูตรวิทยาศาสตร์-คณิตศาสตร์</h3>
+                        <p class="program-desc">เน้นการเรียนรู้ด้านวิทยาศาสตร์ คณิตศาสตร์ และเทคโนโลยี เพื่อสร้างพื้นฐานสู่การศึกษาต่อในระดับที่สูงขึ้น</p>
+                        <a href="#" class="program-btn">รายละเอียด <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="program-box scroll-reveal" data-delay="300">
+                        <div class="program-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="program-title">STEM Education</h3>
+                        <p class="program-desc">บูรณาการความรู้ด้านวิทยาศาสตร์ เทคโนโลยี วิศวกรรมศาสตร์ และคณิตศาสตร์ ผ่านกิจกรรมการเรียนรู้แบบโครงงาน</p>
+                        <a href="#" class="program-btn">รายละเอียด <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="program-box scroll-reveal" data-delay="400">
+                        <div class="program-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3 class="program-title">ศิลปะและดนตรี</h3>
+                        <p class="program-desc">ส่งเสริมความสามารถพิเศษด้านศิลปะและดนตรี โดยวิทยากรผู้เชี่ยวชาญ พร้อมอุปกรณ์ที่ทันสมัย</p>
+                        <a href="#" class="program-btn">รายละเอียด <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ส่วนพื้นที่และสิ่งอำนวยความสะดวก -->
+        <section class="facilities-section">
+            <div class="container">
+                <div class="section-header-center">
+                    <h2>สิ่งอำนวยความสะดวกและบรรยากาศการเรียนรู้</h2>
+                    <p>โรงเรียนเทพปัญญามีสิ่งอำนวยความสะดวกทางการศึกษาและพื้นที่การเรียนรู้ที่ครบครัน</p>
+                </div>
+                
+                <div class="facilities-grid">
+                    <div class="facility-card scroll-reveal" data-delay="100">
+                        <div class="facility-image">
+                            <img src="images/facility-library.jpg" alt="ห้องสมุด">
+                            <span class="facility-category">การเรียนรู้</span>
+                        </div>
+                        <div class="facility-body">
+                            <h3 class="facility-title">ห้องสมุดทันสมัย</h3>
+                            <p class="facility-desc">ห้องสมุดกว้างขวางพร้อมหนังสือหลากหลาย มุมอ่านหนังสือที่สะดวกสบาย และระบบสืบค้นข้อมูลออนไลน์</p>
+                            <a href="#" class="facility-link">ดูเพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="facility-card scroll-reveal" data-delay="200">
+                        <div class="facility-image">
+                            <img src="images/facility-lab.jpg" alt="ห้องปฏิบัติการวิทยาศาสตร์">
+                            <span class="facility-category">วิทยาศาสตร์</span>
+                        </div>
+                        <div class="facility-body">
+                            <h3 class="facility-title">ห้องปฏิบัติการทางวิทยาศาสตร์</h3>
+                            <p class="facility-desc">ห้องปฏิบัติการวิทยาศาสตร์ที่ทันสมัย พร้อมอุปกรณ์ครบครัน เพื่อการทดลองและวิจัย</p>
+                            <a href="#" class="facility-link">ดูเพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="facility-card scroll-reveal" data-delay="300">
+                        <div class="facility-image">
+                            <img src="images/facility-sport.jpg" alt="สนามกีฬา">
+                            <span class="facility-category">กีฬา</span>
+                        </div>
+                        <div class="facility-body">
+                            <h3 class="facility-title">สนามกีฬาและพื้นที่นันทนาการ</h3>
+                            <p class="facility-desc">สนามกีฬามาตรฐาน สระว่ายน้ำ โรงยิม และพื้นที่นันทนาการที่หลากหลายสำหรับกิจกรรมพัฒนาผู้เรียน</p>
+                            <a href="#" class="facility-link">ดูเพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ส่วนคั่นด้วยภาพพื้นหลัง -->
+        <section class="parallax-section">
+            <div class="parallax-content">
+                <div class="thai-frame featured-content">
+                    <div class="thai-motif thai-motif-top-left"></div>
+                    <div class="thai-motif thai-motif-top-right"></div>
+                    <div class="thai-motif thai-motif-bottom-left"></div>
+                    <div class="thai-motif thai-motif-bottom-right"></div>
+                    <h2>สมัครเรียนปีการศึกษา 2568</h2>
+                    <p>เปิดรับสมัครทั้งระดับประถมศึกษาและมัธยมศึกษา พร้อมทุนการศึกษาสำหรับนักเรียนที่มีความสามารถพิเศษ</p>
+                    <a href="#" class="btn-primary"><i class="fas fa-user-plus"></i> สมัครเรียนออนไลน์</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ข่าวสารล่าสุด -->
+        <section class="news-section">
+            <div class="container">
+                <div class="section-header with-decoration">
+                    <div class="decoration left"></div>
+                    <h2><i class="fas fa-newspaper"></i> ข่าวสารและกิจกรรม</h2>
+                    <div class="decoration right"></div>
+                    <a href="#" class="view-all">ดูทั้งหมด <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="tabs-container">
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="news">ข่าวประชาสัมพันธ์</button>
+                        <button class="tab-btn" data-tab="events">กิจกรรมโรงเรียน</button>
+                        <button class="tab-btn" data-tab="academic">ข่าววิชาการ</button>
+                        <button class="tab-btn" data-tab="awards">ผลงานและรางวัล</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="news-tab">
+                            <div class="news-grid">
+                                <div class="news-card">
+                                    <div class="news-image">
+                                        <img src="images/news1.jpg" alt="ข่าวประชาสัมพันธ์">
+                                        <span class="news-date">15 มี.ค. 2568</span>
+                                    </div>
+                                    <div class="news-body">
+                                        <h3>เปิดรับสมัครนักเรียนใหม่ ประจำปีการศึกษา 2568</h3>
+                                        <p>โรงเรียนเทพปัญญาเปิดรับสมัครนักเรียนใหม่ ประจำปีการศึกษา 2568 ทั้งระดับชั้นประถมศึกษาและมัธยมศึกษา...</p>
+                                        <div class="news-meta">
+                                            <span class="views"><i class="fas fa-eye"></i> 356</span>
+                                            <a href="#" class="read-more">อ่านเพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-card">
+                                    <div class="news-image">
+                                        <img src="images/news2.jpg" alt="ข่าวประชาสัมพันธ์">
+                                        <span class="news-date">10 มี.ค. 2568</span>
+                                    </div>
+                                    <div class="news-body">
+                                        <h3>ประกาศผลสอบโครงการพัฒนาความเป็นเลิศทางวิชาการ</h3>
+                                        <p>ประกาศผลการสอบคัดเลือกเข้าร่วมโครงการพัฒนาความเป็นเลิศทางวิชาการ ประจำปีการศึกษา 2568...</p>
+                                        <div class="news-meta">
+                                            <span class="views"><i class="fas fa-eye"></i> 285</span>
+                                            <a href="#" class="read-more">อ่านเพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-card">
+                                    <div class="news-image">
+                                        <img src="images/news3.jpg" alt="ข่าวประชาสัมพันธ์">
+                                        <span class="news-date">8 มี.ค. 2568</span>
+                                    </div>
+                                    <div class="news-body">
+                                        <h3>การประชุมผู้ปกครองนักเรียน ประจำภาคเรียนที่ 2/2567</h3>
+                                        <p>ขอเชิญผู้ปกครองทุกท่านเข้าร่วมการประชุมผู้ปกครองนักเรียน ประจำภาคเรียนที่ 2 ปีการศึกษา 2567...</p>
+                                        <div class="news-meta">
+                                            <span class="views"><i class="fas fa-eye"></i> 210</span>
+                                            <a href="#" class="read-more">อ่านเพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-card">
+                                    <div class="news-image">
+                                        <img src="images/news4.jpg" alt="ข่าวประชาสัมพันธ์">
+                                        <span class="news-date">5 มี.ค. 2568</span>
+                                    </div>
+                                    <div class="news-body">
+                                        <h3>โครงการแลกเปลี่ยนนักเรียนกับโรงเรียนในประเทศญี่ปุ่น</h3>
+                                        <p>โรงเรียนเทพปัญญาเปิดรับสมัครนักเรียนเข้าร่วมโครงการแลกเปลี่ยนกับโรงเรียนมิตรภาพในประเทศญี่ปุ่น...</p>
+                                        <div class="news-meta">
+                                            <span class="views"><i class="fas fa-eye"></i> 178</span>
+                                            <a href="#" class="read-more">อ่านเพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view-more-container">
+                                <a href="#" class="btn-view-more">ดูข่าวทั้งหมด <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="events-tab">
+                            <!-- เนื้อหากิจกรรมโรงเรียน -->
+                        </div>
+                        <div class="tab-pane" id="academic-tab">
+                            <!-- เนื้อหาข่าววิชาการ -->
+                        </div>
+                        <div class="tab-pane" id="awards-tab">
+                            <!-- เนื้อหาผลงานและรางวัล -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ภาพกิจกรรมล่าสุด -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="section-header with-decoration">
+                    <div class="decoration left"></div>
+                    <h2><i class="fas fa-images"></i> ภาพกิจกรรมล่าสุด</h2>
+                    <div class="decoration right"></div>
+                    <a href="#" class="view-all">ดูทั้งหมด <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="gallery-container">
+                    <div class="gallery-items">
+                        <div class="gallery-item">
+                            <img src="images/gallery1.jpg" alt="ภาพกิจกรรม 1">
+                            <div class="gallery-overlay">
+                                <h3>งานวันวิทยาศาสตร์</h3>
+                                <p>15 สิงหาคม 2567</p>
+                                <a href="#" class="btn-view">ดูเพิ่มเติม <i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery2.jpg" alt="ภาพกิจกรรม 2">
+                            <div class="gallery-overlay">
+                                <h3>กิจกรรมกีฬาสี</h3>
+                                <p>10 ธันวาคม 2567</p>
+                                <a href="#" class="btn-view">ดูเพิ่มเติม <i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery3.jpg" alt="ภาพกิจกรรม 3">
+                            <div class="gallery-overlay">
+                                <h3>ทัศนศึกษา</h3>
+                                <p>25 มกราคม 2568</p>
+                                <a href="#" class="btn-view">ดูเพิ่มเติม <i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery4.jpg" alt="ภาพกิจกรรม 4">
+                            <div class="gallery-overlay">
+                                <h3>งานวันภาษาไทย</h3>
+                                <p>26 กุมภาพันธ์ 2568</p>
+                                <a href="#" class="btn-view">ดูเพิ่มเติม <i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="gallery-nav prev" aria-label="ก่อนหน้า"><i class="fas fa-chevron-left"></i></button>
+                    <button class="gallery-nav next" aria-label="ถัดไป"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- คำถามที่พบบ่อย -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header-center">
+                    <h2>คำถามที่พบบ่อย</h2>
+                    <p>คำถามและคำตอบที่ผู้ปกครองและนักเรียนมักสอบถามเกี่ยวกับโรงเรียนเทพปัญญา</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <h3>โรงเรียนเปิดรับสมัครนักเรียนช่วงไหนบ้าง?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>โรงเรียนเทพปัญญาเปิดรับสมัครนักเรียนใหม่ประจำปีการศึกษา ในช่วงเดือนมกราคม-เมษายน โดยแบ่งเป็น</p>
+                            <p>1. รอบแรก: เดือนมกราคม-กุมภาพันธ์ (โควตาความสามารถพิเศษ)<br>
+                               2. รอบทั่วไป: เดือนมีนาคม-เมษายน</p>
+                            <p>ผู้ปกครองสามารถสมัครออนไลน์ผ่านเว็บไซต์โรงเรียน หรือติดต่อสมัครด้วยตนเองที่ฝ่ายทะเบียนของโรงเรียน</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>โรงเรียนมีหลักสูตรพิเศษอะไรบ้าง?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>โรงเรียนเทพปัญญามีหลักสูตรพิเศษหลากหลาย ได้แก่</p>
+                            <p>1. หลักสูตรภาษาอังกฤษ (English Program - EP)<br>
+                               2. หลักสูตรวิทยาศาสตร์-คณิตศาสตร์ (Science-Math Program)<br>
+                               3. หลักสูตร STEM Education<br>
+                               4. หลักสูตรภาษาจีนและญี่ปุ่น<br>
+                               5. หลักสูตรศิลปะและดนตรี</p>
+                            <p>แต่ละหลักสูตรมีการคัดเลือกโดยการสอบ และมีค่าธรรมเนียมการศึกษาที่แตกต่างกัน สามารถสอบถามรายละเอียดเพิ่มเติมได้ที่ฝ่ายวิชาการของโรงเรียน</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>โรงเรียนมีรถรับ-ส่งนักเรียนหรือไม่?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>โรงเรียนเทพปัญญามีบริการรถรับ-ส่งนักเรียนครอบคลุมหลายเส้นทางในกรุงเทพมหานครและปริมณฑล</p>
+                            <p>ผู้ปกครองสามารถลงทะเบียนใช้บริการรถโรงเรียนได้ที่ฝ่ายกิจการนักเรียน โดยค่าบริการจะคิดตามระยะทางและจัดเก็บเป็นรายภาคเรียน</p>
+                            <p>โรงเรียนมีระบบติดตามรถ GPS ให้ผู้ปกครองสามารถติดตามตำแหน่งรถได้ผ่านแอปพลิเคชันของโรงเรียน เพื่อความปลอดภัยและสะดวกในการรับส่งนักเรียน</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>โรงเรียนมีกิจกรรมเสริมหลักสูตรอะไรบ้าง?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>โรงเรียนเทพปัญญามีกิจกรรมเสริมหลักสูตรที่หลากหลาย เพื่อพัฒนาศักยภาพของนักเรียนรอบด้าน ได้แก่</p>
+                            <p>1. ชมรมวิชาการ: คณิตศาสตร์ วิทยาศาสตร์ คอมพิวเตอร์ ภาษาต่างประเทศ<br>
+                               2. ชมรมศิลปะและดนตรี: วาดภาพ ดนตรีไทย ดนตรีสากล นาฏศิลป์<br>
+                               3. ชมรมกีฬา: ฟุตบอล บาสเกตบอล วอลเลย์บอล เทนนิส ว่ายน้ำ<br>
+                               4. ชมรมจิตอาสา: บำเพ็ญประโยชน์ อนุรักษ์สิ่งแวดล้อม<br>
+                               5. กิจกรรมค่ายวิชาการและทัศนศึกษา</p>
+                            <p>นักเรียนสามารถเลือกเข้าร่วมกิจกรรมได้ตามความสนใจ โดยจะมีการจัดกิจกรรมชมรมทุกวันพุธ ช่วงบ่าย</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>ค่าธรรมเนียมการศึกษาของโรงเรียนเป็นอย่างไร?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>ค่าธรรมเนียมการศึกษาของโรงเรียนเทพปัญญาแตกต่างกันตามระดับชั้นและหลักสูตร โดยประมาณดังนี้</p>
+                            <p>1. หลักสูตรปกติ:<br>
+                               - ระดับประถมศึกษา: XX,XXX - XX,XXX บาทต่อปี<br>
+                               - ระดับมัธยมศึกษา: XX,XXX - XX,XXX บาทต่อปี</p>
+                            <p>2. หลักสูตรพิเศษ (EP, วิทย์-คณิต):<br>
+                               - ระดับประถมศึกษา: XX,XXX - XX,XXX บาทต่อปี<br>
+                               - ระดับมัธยมศึกษา: XX,XXX - XX,XXX บาทต่อปี</p>
+                            <p>ค่าธรรมเนียมนี้ครอบคลุมค่าเล่าเรียน ค่าอาหารกลางวัน ค่าหนังสือและอุปกรณ์การเรียนพื้นฐาน โดยสามารถแบ่งชำระได้เป็นรายภาคเรียน</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ส่วนลิงค์หน่วยงานที่เกี่ยวข้อง -->
+        <section class="links-section">
+            <div class="container">
+                <div class="section-header-center">
+                    <h2>พันธมิตรและหน่วยงานที่เกี่ยวข้อง</h2>
+                    <p>หน่วยงานและองค์กรที่ร่วมสนับสนุนการจัดการศึกษาของโรงเรียนเทพปัญญา</p>
+                </div>
+
+                <div class="links-container">
+                    <a href="https://www.moe.go.th/" target="_blank" class="link-item" title="กระทรวงศึกษาธิการ">
+                        <img src="images/link1.png" alt="กระทรวงศึกษาธิการ">
+                    </a>
+                    <a href="https://www.obec.go.th/" target="_blank" class="link-item" title="สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน">
+                        <img src="images/link2.png" alt="สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน">
+                    </a>
+                    <a href="https://www.opec.go.th/" target="_blank" class="link-item" title="สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน">
+                        <img src="images/link3.png" alt="สำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน">
+                    </a>
+                    <a href="https://www.niets.or.th/" target="_blank" class="link-item" title="สถาบันทดสอบทางการศึกษาแห่งชาติ">
+                        <img src="images/link4.png" alt="สถาบันทดสอบทางการศึกษาแห่งชาติ">
+                    </a>
+                    <a href="https://www.dek-d.com/" target="_blank" class="link-item" title="Dek-D">
+                        <img src="images/link5.png" alt="Dek-D">
+                    </a>
+                    <a href="https://www.trueplookpanya.com/" target="_blank" class="link-item" title="ทรูปลูกปัญญา">
+                        <img src="images/link6.png" alt="ทรูปลูกปัญญา">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ส่วนท้ายเว็บไซต์ -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-widgets">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <img src="images/school-logo-white.png" alt="โลโก้โรงเรียนเทพปัญญา">
+                            <h3>โรงเรียนเทพปัญญา</h3>
+                            <p>THEP PANYA SCHOOL</p>
+                        </div>
+                        <p class="footer-desc">สถาบันการศึกษาชั้นนำที่มุ่งพัฒนาผู้เรียนให้มีความเป็นเลิศทางวิชาการ มีคุณธรรม จริยธรรม และมีทักษะในศตวรรษที่ 21</p>
+                        <div class="footer-contact">
+                            <p><i class="fas fa-map-marker-alt"></i> เลขที่ 123 ถนนสุขุมวิท แขวงพระโขนง เขตคลองเตย กรุงเทพมหานคร 10110</p>
+                            <p><i class="fas fa-phone"></i> 02-XXX-XXXX</p>
+                            <p><i class="fas fa-fax"></i> 02-XXX-XXXX</p>
+                            <p><i class="fas fa-envelope"></i> info@theppanya.ac.th</p>
+                        </div>
+                    </div>
+                    <div class="footer-widget">
+                        <h3 class="footer-widget-title">เข้าถึงข้อมูล</h3>
+                        <ul class="footer-links two-columns">
+                            <li><a href="#"><i class="fas fa-angle-right"></i> หน้าหลัก</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> เกี่ยวกับโรงเรียน</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> ประวัติโรงเรียน</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> วิสัยทัศน์และพันธกิจ</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> โครงสร้างการบริหาร</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> คณะผู้บริหาร</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> ข่าวประชาสัมพันธ์</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> ปฏิทินกิจกรรม</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> ภาพกิจกรรม</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> ติดต่อเรา</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h3 class="footer-widget-title">สำหรับนักเรียน</h3>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fas fa-angle-right"></i> ระบบรับสมัครนักเรียน</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> ตรวจสอบผลการเรียน</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> ตารางเรียน/ตารางสอบ</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> ดาวน์โหลดเอกสาร</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> ห้องเรียนออนไลน์</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> ห้องสมุดดิจิทัล</a></li>
+                        </ul>
+                        <h3 class="footer-widget-title mt-30">สำหรับผู้ปกครอง</h3>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fas fa-angle-right"></i> ปฏิทินการศึกษา</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> ชำระค่าเทอม</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> ระบบรถรับส่ง</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h3 class="footer-widget-title">ติดตามเรา</h3>
+                        <div class="social-widgets">
+                            <a href="#" class="social-widget-btn facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="social-widget-btn youtube">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="#" class="social-widget-btn instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-widget-btn line">
+                                <i class="fab fa-line"></i>
+                                <span>Line Official</span>
+                            </a>
+                        </div>
+                        <div class="newsletter">
+                            <h3 class="footer-widget-title">รับข่าวสาร</h3>
+                            <p>ลงทะเบียนเพื่อรับข่าวสารและกิจกรรมล่าสุดจากโรงเรียนเทพปัญญา</p>
+                            <form class="newsletter-form">
+                                <input type="email" placeholder="อีเมลของคุณ">
+                                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2568 โรงเรียนเทพปัญญา. สงวนลิขสิทธิ์.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">นโยบายความเป็นส่วนตัว</a>
+                    <a href="#">นโยบายคุกกี้</a>
+                    <a href="#">แผนผังเว็บไซต์</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- คำสั่งย้อนกลับไปด้านบน -->
+    <a href="#" class="back-to-top" aria-label="กลับไปด้านบน">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Popup แนะนำ -->
+    <div class="popup-container" id="welcome-popup">
+        <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <div class="popup-header">
+                <div class="popup-logo">
+                    <img src="images/school-logo.png" alt="โลโก้โรงเรียนเทพปัญญา">
+                </div>
+                <h2>ยินดีต้อนรับสู่โรงเรียนเทพปัญญา</h2>
+            </div>
+            <div class="popup-body">
+                <div class="thai-frame popup-frame">
+                    <div class="thai-motif thai-motif-top-left"></div>
+                    <div class="thai-motif thai-motif-top-right"></div>
+                    <div class="thai-motif thai-motif-bottom-left"></div>
+                    <div class="thai-motif thai-motif-bottom-right"></div>
+                    <h3>เปิดรับสมัครนักเรียนใหม่ ปีการศึกษา 2568</h3>
+                    <p>ระดับชั้นอนุบาล ประถมศึกษา และมัธยมศึกษา</p>
+                    <p>เปิดรับสมัคร 1 มีนาคม - 30 เมษายน 2568</p>
+                    <div class="popup-buttons">
+                        <a href="#" class="btn-primary"><i class="fas fa-user-plus"></i> สมัครเรียนออนไลน์</a>
+                        <a href="#" class="btn-secondary"><i class="fas fa-info-circle"></i> ข้อมูลเพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/theme.js"></script>
+    <script src="js/mega-menu.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
